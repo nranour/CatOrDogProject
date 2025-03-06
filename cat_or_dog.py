@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 # Afficher le logo en haut de la barre latérale
-st.sidebar.image("images/ehtp_logo.png", use_column_width=True)
+st.sidebar.image("images/ehtp_logo.png", use_container_width=True)
 st.sidebar.write("---------------")
 
 # Afficher l'objet du projet dans la barre latérale
