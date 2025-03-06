@@ -55,7 +55,7 @@ if image_uploaded is not None:
     image_resized = image.resize((500, 500))
     col1, col2, col3 = st.columns([1, 5, 1])  
     with col2:
-        st.image(image_resized, use_column_width=False)
+        st.image(image_resized, use_container_width=False)
         
     # Prédire la classe de l'image
     prediction = image_predict(image)
@@ -73,7 +73,7 @@ if image_uploaded is not None:
                                         text-align: center;
                                         color: green;
                                         font-weight: bold;
-                                        font-size: 60px;
+                                        font-size: 200px;
                                     }
                     </style>
                 """, unsafe_allow_html=True)
@@ -83,9 +83,9 @@ if image_uploaded is not None:
                     <style>
                         .confiance-text {
                                             text-align: center;
-                                            color: white;
+                                            color: red;
                                             font-weight: bold;
-                                            font-size: 20px;
+                                            font-size: 100px;
                                         }
                     </style>
                 """, unsafe_allow_html=True)
