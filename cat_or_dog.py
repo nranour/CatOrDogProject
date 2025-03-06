@@ -77,7 +77,7 @@ if image_uploaded is not None:
                                     }
                     </style>
                 """, unsafe_allow_html=True)
-    st.markdown(f'<p class="classe-text">{class_name}</p>', unsafe_allow_html=True)
+    st.markdown(f'<div class="classe-text">{class_name}</div>', unsafe_allow_html=True)
     
     st.markdown("""
                     <style>
