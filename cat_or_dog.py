@@ -73,7 +73,7 @@ if image_uploaded is not None:
                                         text-align: center;
                                         color: green;
                                         font-weight: bold;
-                                        font-size: 100px;
+                                        font-size: 60px;
                                     }
                     </style>
                 """, unsafe_allow_html=True)
@@ -85,7 +85,7 @@ if image_uploaded is not None:
                                             text-align: center;
                                             color: red;
                                             font-weight: bold;
-                                            font-size: 100px;
+                                            font-size: 30px;
                                         }
                     </style>
                 """, unsafe_allow_html=True)
