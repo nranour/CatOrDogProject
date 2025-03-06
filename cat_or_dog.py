@@ -73,7 +73,7 @@ if image_uploaded is not None:
                                         text-align: center;
                                         color: green;
                                         font-weight: bold;
-                                        font-size: 200px;
+                                        font-size: 100px;
                                     }
                     </style>
                 """, unsafe_allow_html=True)
