@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 # Afficher le logo en haut de la barre latérale
-st.sidebar.image("images/ehtp_logo.png", use_column_width=True)
+st.sidebar.image("images/ehtp_logo.png", use_container_width=True)
 st.sidebar.write("---------------")
 
 # Afficher l'objet du projet dans la barre latérale
@@ -55,7 +55,7 @@ if image_uploaded is not None:
     image_resized = image.resize((500, 500))
     col1, col2, col3 = st.columns([1, 5, 1])  
     with col2:
-        st.image(image_resized, use_column_width=False)
+        st.image(image_resized, use_container_width=False)
         
     # Prédire la classe de l'image
     prediction = image_predict(image)
@@ -77,15 +77,15 @@ if image_uploaded is not None:
                                     }
                     </style>
                 """, unsafe_allow_html=True)
-    st.markdown(f'<p class="classe-text">{class_name}</p>', unsafe_allow_html=True)
+    st.markdown(f'<div class="classe-text">{class_name}</div>', unsafe_allow_html=True)
     
     st.markdown("""
                     <style>
                         .confiance-text {
                                             text-align: center;
-                                            color: white;
+                                            color: red;
                                             font-weight: bold;
-                                            font-size: 20px;
+                                            font-size: 30px;
                                         }
                     </style>
                 """, unsafe_allow_html=True)
